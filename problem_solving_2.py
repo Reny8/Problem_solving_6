@@ -1,10 +1,23 @@
 # Happy Numbers 
-# a happy number is a number defined by the following process: starting with any positive integer
-# Replace the number by the sum of the squares of its digits
-# Repeat the process until the number equals 1. 
-# Write a method that determines if a number is happy or sad 
-number = "19"
-first = int(number[0])
-second = int(number[1])
-equation = (first ** 2) + (second ** 2)
-print(equation)
+
+number = "11"
+def happy_tester(num):
+    while num != "1":
+        if num != "4":
+            first = int(num[0])
+            # Bug found underneath. Still fixing the wording
+            if num[1] != None:
+                second = int(num[1])
+                answer = (first ** 2) + (second ** 2)
+                num = str(answer)  
+            # Likely a bug for wording inproperly 
+            if num[1] == None:
+                second = 0
+                answer = (first ** 2) + 0
+                num = str(answer)  
+        if num == "1":
+            print("Happy number!")
+        if num == "4":
+            print("Sad number.")
+
+happy_tester(number)

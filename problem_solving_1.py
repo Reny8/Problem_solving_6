@@ -5,8 +5,9 @@ for index in range(len(user_word_choice) -1, -1, -1):
     reversed_word += reversed
 print(reversed_word)
 
-user_word = input("Provide two or more words: ").title()
-print(user_word)
+#Capitalize first letters 
+# Come back to later
+
  
 reversed = ""
 word_choice = input("Which word would you like to check? ")
