@@ -11,7 +11,7 @@ def happy_tester(num):
                 answer = (first ** 2) + (second ** 2)
                 num = str(answer)  
             # Likely a bug for wording inproperly 
-            if num[1] == None:
+            else:
                 second = 0
                 answer = (first ** 2) + 0
                 num = str(answer)  
