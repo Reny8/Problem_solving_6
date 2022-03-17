@@ -1,5 +1,4 @@
 # Happy Numbers 
-
 number = "11"
 def happy_tester(num):
     while num != "1":

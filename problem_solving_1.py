@@ -6,7 +6,6 @@ def backwards(word):
     print(reversed_word)
 
 backwards("welcome")
-
 #Capitalize first letters
 # Try again
 lower = ['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y', 'z']
@@ -14,8 +13,7 @@ upper = ['A', 'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R
 word = "reny reyes"
 def cap(word):
     for w in word:
-        if w == lower:
-            print(w)
+        pass
             
 #Compress the string
 def compress(word):
