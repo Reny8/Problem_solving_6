@@ -1,5 +1,4 @@
 # Happy Numbers 
-number = "11"
 def happy_tester(num):
     while num != "1":
         if num != "4":
@@ -12,8 +11,10 @@ def happy_tester(num):
                 answer = (first ** 2) + (second ** 2)
                 num = str(answer)
         if num == "1":
-            print("Happy number!")
+            print("Happy Number")
         if num == "4":
-            print("Sad number.")
+            end = print("Sad number")
+            return end
 
-happy_tester(number)
+
+happy_tester("11")

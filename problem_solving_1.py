@@ -12,8 +12,7 @@ lower = ['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r
 upper = ['A', 'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
 word = "reny reyes"
 def cap(word):
-    for w in word:
-        pass
+    pass
             
 #Compress the string
 def compress(word):
