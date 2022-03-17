@@ -7,20 +7,28 @@ def backwards(word):
 
 backwards("welcome")
 
+#Capitalize first letters
+# Try again
+lower = ['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y', 'z']
+upper = ['A', 'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
+word = "reny reyes"
+def cap(word):
+    for w in word:
+        if w == lower:
+            print(w)
+            
+#Compress the string
+def compress(word):
+    pass
 
-#Capitalize first letters 
-# Come back to later
 
 def palindrome(word):
     reversed = ""
-    for letter in range(len(word) -1, -1, -1):
-        reverse_word = word[letter]
-        reversed += reverse_word
+    backwards(word)
     if reversed == word:
         print(f"{reversed} is a Palindrome!")
     else:
         print("Not a Palindrome")
-
 palindrome("welcome")
 palindrome("madam")
 

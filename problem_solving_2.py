@@ -6,13 +6,13 @@ def happy_tester(num):
         if num != "4":
             first = int(num[0])
             # Bug found underneath. Still fixing the wording
-            if not num[1] == None:
-                second = int(num[1])
-                answer = (first ** 2) + (second ** 2)
-                num = str(answer)  
-            else:
-                answer = (first ** 2)
-                num = str(answer)  
+        if num[1] is None:
+            answer = (first**2)
+            num = str(answer)   
+        else:
+            second = int(num[1])
+            answer = (first ** 2) + (second ** 2)
+            num = str(answer)
         if num == "1":
             print("Happy number!")
         if num == "4":
