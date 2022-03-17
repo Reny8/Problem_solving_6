@@ -8,15 +8,14 @@ def backwards(word):
 backwards("welcome")
 
 # Capital word. Need to lowercase the rest of the word.
-def cap():
-    example = input("What is your name: ")
+def cap(example):
     new = ""
     for ex in example:
         letter = ex.upper()
         new += letter
     print(new)
 
-cap()
+cap("reny reyes")
 
 # Compress 
 def compress(word):

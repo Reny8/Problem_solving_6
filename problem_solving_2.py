@@ -30,14 +30,14 @@ def prime_number_list(number):
 prime_number_list(4)
 
 # Fibonacci
-numbers = [1,2,3,4,5,6,7,8,9,10] #test list
-def fibo(): 
-    while numbers != []:
-        answer = numbers[0] + numbers[1]
-        print(answer)
-        next = answer + numbers[2]
-        print(next)
-        numbers.remove(numbers[0])
-        numbers.remove(numbers[1])
-        numbers[0] = next
-
+def fibo():
+    max_count = 20
+    first_num = 1
+    second_num = 2
+    result = 3
+    for result in range(1,max_count):
+        print(first_num)
+        next = first_num + second_num
+        first_num = second_num
+        second_num = next
+fibo()
