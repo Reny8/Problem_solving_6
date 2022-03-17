@@ -6,19 +6,23 @@ def backwards(word):
     print(reversed_word)
 
 backwards("welcome")
-#Capitalize first letters
-# Try again
-lower = ['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y', 'z']
-upper = ['A', 'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
-word = "reny reyes"
-def cap(word):
-    pass
-            
-#Compress the string
+
+# Capital word. Need to lowercase the rest of the word.
+def cap():
+    example = input("What is your name: ")
+    new = ""
+    for ex in example:
+        letter = ex.upper()
+        new += letter
+    print(new)
+
+cap()
+
+# Compress 
 def compress(word):
     pass
 
-
+# Palindrome
 def palindrome(word):
     reversed = ""
     backwards(word)
@@ -28,14 +32,5 @@ def palindrome(word):
         print("Not a Palindrome")
 palindrome("welcome")
 palindrome("madam")
-
-
-
-
-
-
-
-
-
 
 
