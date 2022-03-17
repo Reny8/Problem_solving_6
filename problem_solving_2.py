@@ -15,6 +15,20 @@ def happy_tester(num):
         if num == "4":
             end = print("Sad number")
             return end
-
-
 happy_tester("11")
+
+# Prime Numbers 
+# a prime number is a number that is only divisible by one and itself 
+# b write a method that prints out all prime numbers between 1 and 100 
+# 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59
+# 61, 67, 71, 73, 79, 83, 89, 97
+def prime_number_list(number): 
+    is_prime = True
+    for num in range(2, number):
+        if number % num == 0:
+            is_prime = False
+    if is_prime == False:
+        print(number)
+    else:
+        print("Prime Number")
+prime_number_list(4)
