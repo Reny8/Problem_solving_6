@@ -34,8 +34,7 @@ def fibo():
     max_count = 20
     first_num = 1
     second_num = 2
-    result = 3
-    for result in range(1,max_count):
+    for sum in range(1,max_count):
         print(first_num)
         next = first_num + second_num
         first_num = second_num
