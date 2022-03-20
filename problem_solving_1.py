@@ -5,7 +5,7 @@ def backwards(word):
         reversed_word += reversed
     print(reversed_word)
 
-# backwards("welcome")
+backwards("welcome")
 
 # Capital word. Need to lowercase the rest of the word.
 def cap(example):
@@ -32,7 +32,7 @@ def palindrome(word):
         print(f"{reversed} is a Palindrome!")
     else:
         print("Not a Palindrome")
-# palindrome("welcome")
-# palindrome("madam")
+palindrome("welcome")
+palindrome("madam")
 
 
