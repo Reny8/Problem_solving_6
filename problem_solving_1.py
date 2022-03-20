@@ -5,17 +5,20 @@ def backwards(word):
         reversed_word += reversed
     print(reversed_word)
 
-backwards("welcome")
+# backwards("welcome")
 
 # Capital word. Need to lowercase the rest of the word.
 def cap(example):
-    new = ""
+    list = []
+    final = ""
+    first_letter = example[0].upper()
+    list.append(first_letter)
     for ex in example:
-        letter = ex.upper()
-        new += letter
-    print(new)
+        list.append(ex)
+    list.pop(1)
+    print(list)
 
-cap("reny reyes")
+cap(input("What is your name? "))
 
 # Compress 
 def compress(word):
@@ -29,7 +32,7 @@ def palindrome(word):
         print(f"{reversed} is a Palindrome!")
     else:
         print("Not a Palindrome")
-palindrome("welcome")
-palindrome("madam")
+# palindrome("welcome")
+# palindrome("madam")
 
 
