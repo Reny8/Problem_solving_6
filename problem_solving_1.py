@@ -1,3 +1,4 @@
+
 def backwards(word):
     reversed_word = ""
     for index in range(len(word) -1, -1, -1):
@@ -5,18 +6,20 @@ def backwards(word):
         reversed_word += reversed
     print(reversed_word)
 
-backwards("welcome")
 
 # Capital word.
 def cap(example):
     list = []
+    string = ''
     first_letter = example[0].upper()
     list.append(first_letter)
     for ex in example:
         list.append(ex)
     list.pop(1)
-    print(list)
-cap(input("What is your name? "))
+    for item in list:
+        string += item
+    return string
+
 
 # Compress 
 def compress(word):
@@ -32,7 +35,6 @@ def compress(word):
             count= 1
     final_result += str(count) + word_letters
     print(final_result)
-compress('aaaaaabbbbbbcccdddaaa')
 
 # Palindrome
 def palindrome(word):
@@ -42,6 +44,16 @@ def palindrome(word):
         print(f"{reversed} is a Palindrome!")
     else:
         print("Not a Palindrome")
+
+# called functions
+backwards("welcome")
+
+first = cap(input("What is your first name? "))
+last = cap(input("What is your last name? "))
+print(f"{first} {last}")
+
+compress('aaaaaabbbbbbcccdddaaa')
+
 palindrome("welcome")
 palindrome("madam")
 
