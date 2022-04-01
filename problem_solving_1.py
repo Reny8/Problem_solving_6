@@ -25,14 +25,15 @@ def cap(example):
 def compress(word):
     count = 0
     word_letters = word[0]
-    final_result= ''
+    final_result = ''
     for character in word:
         if character == word_letters:
             count += 1
         else:
             final_result += str(count) + word_letters
-            word_letters= character
-            count= 1
+            # redefined the first index position as the second letter
+            word_letters = character
+            count = 1
     final_result += str(count) + word_letters
     print(final_result)
 
