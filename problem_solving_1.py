@@ -16,15 +16,23 @@ def cap(example):
         list.append(ex)
     list.pop(1)
     print(list)
-        
-
-    
-
-cap(input("What is your name?"))
+cap(input("What is your name? "))
 
 # Compress 
 def compress(word):
-    pass
+    count = 0
+    word_letters = word[0]
+    final_result= ''
+    for character in word:
+        if character == word_letters:
+            count += 1
+        else:
+            final_result += str(count) + word_letters
+            word_letters= character
+            count= 1
+    final_result += str(count) + word_letters
+    print(final_result)
+compress('aaaaaabbbbbbcccdddaaa')
 
 # Palindrome
 def palindrome(word):
