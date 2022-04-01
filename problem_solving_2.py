@@ -27,7 +27,10 @@ def prime_number_list(number):
         print(number)
     else:
         print("Prime Number")
-prime_number_list(4)
+
+# Created a for loop to call with all the numbers ranging from 2 to 100
+for num in range(2,101):
+    prime_number_list(num)
 
 # Fibonacci
 def fibo():
