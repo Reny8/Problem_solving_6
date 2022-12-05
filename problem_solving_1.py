@@ -39,7 +39,6 @@ def compress(word):
 
 # Palindrome
 def palindrome(word):
-    reversed = ""
     backwards(word)
     if reversed == word:
         print(f"{reversed} is a Palindrome!")

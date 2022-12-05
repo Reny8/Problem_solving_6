@@ -18,19 +18,11 @@ def happy_tester(num):
 happy_tester("11")
 
 # Prime Numbers 
-def prime_number_list(number): 
-    is_prime = True
-    for num in range(2, number):
-        if number % num == 0:
-            is_prime = False
-    if is_prime == False:
-        print(number)
-    else:
-        print("Prime Number")
-
-# Created a for loop to call with all the numbers ranging from 2 to 100
-for num in range(2,101):
-    prime_number_list(num)
+def SortedPrimes(input_array:list):
+    nums = input_array
+    for i in range(2, 8):
+        nums = sorted(list(filter(lambda x: x == i or x % i, nums)))
+    return nums
 
 # Fibonacci
 def fibo():
